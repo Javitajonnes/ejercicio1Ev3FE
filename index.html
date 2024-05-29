@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Ingreso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Formulario de Ingreso</h1>
+  <div class="p-3 mb-2 bg-secondary text-white position-absolute top-50 start-50 translate-middle">
+  <form id="loginForm" onsubmit="return validateForm()">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required><br><br>
+
+    <label for="cargo">Cargo:</label>
+    <select type="text" id="cargo" name="cargo" required>
+        <option value="">Seleccione area</option>
+        <option value="docente">Docente</option>
+        <option value="alumno">Alumno</option>        
+        </select>
+        <br><br>
+    <label for="clave">Clave:</label>
+    <input type="password" id="clave" name="clave" required><br><br>
+
+    <input type="submit" value="Enviar">
+    <div id="errorMessage" class="error"></div>
+  </form>
+
+      <script src="app.js"></script>
+    </div>
+</body>
+</html>
